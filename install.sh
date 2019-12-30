@@ -7,6 +7,8 @@ fi
 
 cd /usr/local/bin
 
+echo "Downloading scripts"
+
 curl -L -o volume_down https://raw.githubusercontent.com/Anonymoustank/Crouton-essentials/master/volume_down
 
 chmod +x volume_down
