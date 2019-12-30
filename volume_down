@@ -1,0 +1,9 @@
+#!/bin/bash
+
+if [ "$(volume get mute)" == "yes" ]; then
+amixer set Master 0
+else
+volume down 2
+fi
+notify-send -u critical -t 3000 "$(volume get volume)"
+

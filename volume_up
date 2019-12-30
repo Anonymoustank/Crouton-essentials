@@ -1,0 +1,7 @@
+#!/bin/bash
+
+amixer sset Master unmute
+
+volume up 2
+
+notify-send -u critical -t 3000 "$(volume get volume)"

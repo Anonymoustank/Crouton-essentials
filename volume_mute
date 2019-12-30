@@ -1,0 +1,8 @@
+#!/bin/bash
+
+if [ $(volume get mute) == "yes" ]; then
+volume mute unset
+else
+volume mute
+fi
+notify-send -u critical -t 3000 "$(volume get volume)"
