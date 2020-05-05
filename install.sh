@@ -25,4 +25,8 @@ cd /home/*
 
 curl -L -o .xbindkeysrc https://raw.githubusercontent.com/Anonymoustank/Crouton-essentials/master/.xbindkeysrc
 
+mkdir -p /home/*/.config/autostart
+
+curl -L -o pulseaudio_startup.desktop https://raw.githubusercontent.com/Anonymoustank/Crouton-essentials/master/pulseaudio
+
 echo "Restart your chroot for the changes to take effect"
